@@ -1,0 +1,15 @@
+/* Set background image */
+body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.site-title
+{
+    color: #8A2BE2; 
+    font-size: xx-large;
+    font-family: Arial, sans-serif;
+}
