@@ -7,9 +7,47 @@
     <link rel="stylesheet" href="layout.css">
     <title>Impressum</title>
     <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-item {
+            position: relative;
+            background-color: #333333;
+            height: 300px;
+            width: 300px;
+            margin: 2%;
+        }
+
+        .flex-title
+        {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-size: 200%;
+        }
     </style>
 </head>
 <body>
     <p class="site-title">&lt;Impressum&gt;</p>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h1 class="flex-title">Kontakforumlar</h1>
+        </div>
+        <div class="flex-item">
+            <h1 class="flex-title">Telefon</h1>
+        </div>
+        <div class="flex-item">
+            <h1 class="flex-title">Social Media</h1>
+        </div>
+
+    </div>
 </body>
 </html>
