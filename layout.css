@@ -1,11 +1,13 @@
 /* Set standart font */
 p{
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 /* Set standart head */
 h1{
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 /* Set background image */
@@ -22,6 +24,8 @@ body{
 /* Set site title */
 .site-title
 {
+    align-self: flex-start; /* Positioniert den Site-Titel am Anfang der Flexbox */
+    text-align: left; /* Links ausrichten */
     color: #8A2BE2; 
     font-size: xx-large;
 }
