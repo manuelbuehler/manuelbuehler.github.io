@@ -7,9 +7,68 @@
     <link rel="stylesheet" href="layout.css">
     <title>Fähigkeiten</title>
     <style>
+
+
+        body
+        {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            height: 96vh; 
+        }
+
+
+        .flexbox-container{
+            background-color: #333333;
+            width: 90vw;
+            height: auto;
+            margin-bottom: 4vh;
+            padding: 2%;
+        }
+
+        .progress-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        margin-bottom: 3%;
+        overflow: hidden;
+        }
+
+        .progress {
+        height: 100%;
+        background-color: #8A2BE2;
+        width: var(--progress-percent, 0%);
+        }
+
+
+
     </style>
 </head>
 <body>
     <p class="site-title">&lt;Fähigkeiten&gt;</p>
+    <div class="flexbox-container">
+        <h1>Fähigkeiten</h1>
+
+        <h2>C#</h2>
+        <div class="progress-bar">
+            <div class="progress" style="--progress-percent: 75%;"></div>
+          </div>
+          
+        <h2>Bash</h2>
+        <div class="progress-bar">
+            <div class="progress" style="--progress-percent: 20%;"></div>
+        </div>
+
+        <h2>SQL</h2>
+        <div class="progress-bar">
+            <div class="progress" style="--progress-percent: 65%;"></div>
+          </div>
+
+        <h2>HTML & CSS</h2>
+        <div class="progress-bar">
+            <div class="progress" style="--progress-percent: 45%;"></div>
+        </div>
+    </div>
 </body>
 </html>

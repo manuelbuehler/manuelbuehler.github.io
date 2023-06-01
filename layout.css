@@ -10,6 +10,12 @@ h1{
     color: white;
 }
 
+/* Set standart head 2*/
+h2{
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
 /* Set background image */
 body{
     background-image: url(img/background.jpg);
