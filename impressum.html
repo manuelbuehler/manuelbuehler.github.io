@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Impressum</title>
     <style>
         .flex-container {
@@ -30,7 +31,7 @@
             bottom: 0;
             text-align: center;
             width: 100%;
-            font-size: 200%;
+            font-size: 150%;
         }
 
         img{
@@ -42,10 +43,10 @@
         .flex-item:before {
             content: attr(hover-text);
             text-align: center;
-            font-size: large;
+            font-size: 100%; 
+            line-height: 100%; 
             position: absolute;
             font: Arial sans-serif;
-            font-size: x-large;
             text-align: center;
             top: 5%;
             width: 100%;
@@ -63,7 +64,15 @@
     </style>
 </head>
 <body>
-    <p class="site-title">&lt;Impressum&gt;</p>
+    <nav class="navbar">
+        <div>
+            <a href="start.html" class="navbar-content">Startseite</a>
+            <a href="aboutme.html" class="navbar-content">Über mich</a>
+            <a href="portfolio.html" class="navbar-content">Portfolio</a>
+            <a href="skills.html" class="navbar-content">Fähigkeiten</a>
+            <a href="impressum.html" class="navbar-currentItem">Impressum</a>
+        </div>
+    </nav>
     <div class="flex-container">
         <div class="flex-item" hover-text="manuel.buehler@edu.gbssg.ch">
             <h1 class="flex-title">Kontakforumlar</h1>

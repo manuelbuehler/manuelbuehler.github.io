@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Fähigkeiten</title>
     <style>
 
@@ -14,26 +15,28 @@
             display: flex;
             flex-direction: column; 
             align-items: center; 
-            height: 96vh; 
+            height: 100vh; 
         }
 
+        .progress-bar {
+        width: 100%;
+        height: 3vh;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 2%;
+        overflow: hidden;
+        }
 
         .flexbox-container{
             background-color: #333333;
             width: 90vw;
             height: auto;
-            margin-bottom: 4vh;
-            padding: 2%;
+            margin-top: 7%;
+            padding-left: 2%;
+            padding-right: 2%;
         }
 
-        .progress-bar {
-        width: 100%;
-        height: 20px;
-        background-color: #f2f2f2;
-        border-radius: 10px;
-        margin-bottom: 3%;
-        overflow: hidden;
-        }
+
 
         .progress {
         height: 100%;
@@ -46,7 +49,15 @@
     </style>
 </head>
 <body>
-    <p class="site-title">&lt;Fähigkeiten&gt;</p>
+    <nav class="navbar">
+        <div>
+            <a href="start.html" class="navbar-content">Startseite</a>
+            <a href="aboutme.html" class="navbar-content">Über mich</a>
+            <a href="portfolio.html" class="navbar-content">Portfolio</a>
+            <a href="skills.html" class="navbar-currentItem">Fähigkeiten</a>
+            <a href="impressum.html" class="navbar-content">Impressum</a>
+        </div>
+    </nav>
     <div class="flexbox-container">
         <h1>Fähigkeiten</h1>
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Über mich</title>
     <style>
         body
@@ -22,6 +23,7 @@
             width: 90vw;
             height: 75vh;
             margin-bottom: 5%;
+            margin-top: 7%;
             padding: 2%;
         }
 
@@ -34,16 +36,19 @@
             margin-left: 3%;
             margin-right: 3%;
         }
-
-
-
-
-        
-
     </style>
 </head>
 <body>
-    <p class="site-title">&lt;Über mich&gt;</p>
+    <nav class="navbar">
+        <div>
+            <a href="start.html" class="navbar-content">Startseite</a>
+            <a href="aboutme.html" class="navbar-currentItem">Über mich</a>
+            <a href="portfolio.html" class="navbar-content">Portfolio</a>
+            <a href="skills.html" class="navbar-content">Fähigkeiten</a>
+            <a href="impressum.html" class="navbar-content">Impressum</a>
+        </div>
+    </nav>
+
     <div class="flexbox-container">
         <h1>Manuel Bühler</h1>
         <img src="img/ManuelBuehler.svg" alt="Manuel Bühler" class="portrait">
