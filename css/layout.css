@@ -1,23 +1,21 @@
 /* Set standart font */
-p{
+p
+{
     font-family: Arial, sans-serif;
     color: white;
 }
 
-/* Set standart head */
-h1{
+/* Set standart headers */
+h1, h2, h3
+{
     font-family: Arial, sans-serif;
     color: white;
 }
 
-/* Set standart head 2*/
-h2{
-    font-family: Arial, sans-serif;
-    color: white;
-}
 
 /* Set background image */
-body{
+body
+{
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: top left;

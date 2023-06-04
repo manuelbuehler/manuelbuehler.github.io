@@ -9,14 +9,26 @@
     <script src="js/video.js"></script>
     <title>Home</title>
     <style>
-        body {
+        .video-container
+        {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: 80vh;
         }
 
-         .DisplayVideo {
+        .text-container
+        {
+            padding: 5%;
+        }
+
+        .code-font
+        {
+            font-family: Monaco, monospace;
+        }
+
+        .DisplayVideo
+        {
             display: none;
         }
 
@@ -33,8 +45,20 @@
         </div>
     </nav>
 
-    <video class="DisplayVideo" width=50% height=auto controls onended="hideVideo()">
-        <source src="vid/RickAstley.mp4" type="video/mp4">
-    </video>
+    <div class="text-container">
+        <p class="code-font">Willkommen auf meiner Persönlichen Webseite!</p>
+        <p class="code-font">Hier findest du einen Überblick über meien Projekte und Fähigkeiten.</p>
+        <p class="code-font">Falls du Fragen hast kannst melde dich gerne über mein
+        <a href="impressum.html" class="navbar-currentItem">Kontakformular</a>
+        </p>
+    </div>
+
+    
+    <div class="video-container">
+        <video class="DisplayVideo" width=50% height=auto controls onended="hideVideo()">
+            <source src="vid/RickAstley.mp4" type="video/mp4">
+        </video>
+    </div>
+
 </body>
 </html>
