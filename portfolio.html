@@ -11,10 +11,12 @@
         .flexbox-container
         {
             display: flex;
-            width: 90vw;
+            width: 100vw;
             height: auto;
             align-items: center;
             justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: center; 
         }
 
         .flexbox-items
@@ -24,6 +26,8 @@
             height: auto;
             width: 25%;
             background-color: #333333;
+            position: relative;
+            padding: 1%;
         }
 
         h2{
@@ -34,7 +38,13 @@
         {
             font-family: Arial, Helvetica, sans-serif;
             color: white;
+            list-style-position: inside;
         }
+
+        img{
+            width: 60%;
+        }
+        
     </style>
 </head>
 <body>
@@ -50,39 +60,42 @@
 
     <div class="flexbox-container">
         <div class="flexbox-items">
-            <h1>Projekt 1</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+            <img src="img/gameboard.svg" alt="Snake">
+            <h1>Snake</h1>
+            <p>In meiner Projektarbeit während meiner Zeit in der 3. Oberstufe habe ich mein erstes Programmierprojekt umgesetzt. Dabei habe ich Snake mithilfe von JavaScript programmiert. Obwohl ich mich hauptsächlich auf Tutorials gestützt habe, konnte ich dabei wertvolle Erfahrungen sammeln. Es war eine spannende Herausforderung, die mir einen ersten Einblick in die Welt des Programmierens gab.</p>
             <h2>Programmiersprache:</h2>
-            <p>Lorem Ipsum</p>
+            <p>Java-Skript</p>
             <h2>Learnings:</h2>
             <ul>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <li>Arbeiten mit Visual Studio</li>
+                <li>Grundlagen des Programmmierens</li>
+                <li>Dokumentierung</li>
             </ul>
         </div>
         <div class="flexbox-items">
-            <h1>Projekt 2</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+            <img src="img/calculator.svg" alt="Binärer-Taschenrechner">
+            <h1>Binärer-Taschenrechner</h1>
+            <p>Ein Binärer Taschenrechner zu programmieren war dein erstes bedeutendes Projekt während deiner Lehrzeit. Dabei hast du die Grundlagen von C# erlernt und angewendet. Der Taschenrechner ermöglichte es dir, Werte einzugeben, die anschließend in Binärzahlen umgewandelt wurden. Du konntest dann die beiden Binärzahlen miteinander verrechnen.</p>
             <h2>Programmiersprache:</h2>
-            <p>Lorem Ipsum</p>
+            <p>C#</p>
             <h2>Learnings:</h2>
             <ul>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <li>C# Grundlagen</li>
+                <li>OO-Programmierung</li>
+                <li>Logisches Denken</li>
             </ul>
         </div>
         <div class="flexbox-items">
-            <h1>Projekt 3</h1>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod </p>
+            <img src="img/burger.svg" alt="aviEat">
+            <h1>aviEat</h1>
+            <p>AviEat ist eine Software, mit der Benutzer Essen bestellen können. Die Bestelldaten werden im Hintergrund mithilfe einer Entity Framework-Datenbank gespeichert. Während der Entwicklung dieses Projekts hattest du häufig mit LINQ-Abfragen zu tun.</p>
             <h2>Programmiersprache:</h2>
-            <p>Lorem Ipsum</p>
+            <p>C#</p>
             <h2>Learnings:</h2>
             <ul>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
+                <li>Windows-Forms</li>
+                <li>LINQ</li>
+                <li>Entity Framework</li>
             </ul>
         </div>
     </div>

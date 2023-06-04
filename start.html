@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/video.js"></script>
     <title>Home</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+         .DisplayVideo {
+            display: none;
+        }
+
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -18,5 +32,9 @@
             <a href="impressum.html" class="navbar-content">Impressum</a>
         </div>
     </nav>
+
+    <video class="DisplayVideo" width=50% height=auto controls onended="hideVideo()">
+        <source src="vid/RickAstley.mp4" type="video/mp4">
+    </video>
 </body>
 </html>
