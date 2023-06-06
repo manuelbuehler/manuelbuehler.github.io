@@ -1,38 +1,35 @@
-.flexbox-container
-{
+.flexbox-container {
     display: flex;
     width: 100%;
     height: auto;
     align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center; 
+    flex-wrap: wrap; /* Elemente werden automatisch umbrochen */
+    align-content: center;
 }
 
-.flexbox-items
-{
+.flexbox-items {
     text-align: center;
     margin-top: 7%;
     height: auto;
-    width: 25%;
+    width: 25vw;
     background-color: #333333;
     position: relative;
     padding: 1%;
+    flex-basis: calc(25% - 2%); /* Flex-Basiswert für die Breite der Elemente */
+    /* Hier kannst du weitere Anpassungen für die Flexbox-Elemente vornehmen */
 }
 
-h2
-{
+h2 {
     color: #8A2BE2;
 }
 
-ul
-{
+ul {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     list-style-position: inside;
 }
 
-img
-{
+img {
     width: 60%;
 }

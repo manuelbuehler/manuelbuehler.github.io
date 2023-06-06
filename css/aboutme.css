@@ -4,29 +4,27 @@ body
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    height: 100vh; 
-}
-
-p
-{
-    size: x-large;
+    height: 90vh; 
+    padding: 1%;
 }
 
 .flexbox-container
 {
     background-color: #333333;
     width: 90%;
-    height: 65%;
-    margin-bottom: 5%;
-    margin-top: 7%;
+    height: auto;
     padding: 2%;
 }
 
-/* positions portrait*/
+.text
+{
+    font-size: large;
+}
+
 .portrait
 {
-    height: 70%;
-    width: auto;
+    height: auto;
+    width: 30%;
     float: right;
     margin-left: 3%;
     margin-right: 3%;
