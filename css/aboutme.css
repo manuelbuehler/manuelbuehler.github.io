@@ -7,11 +7,16 @@ body
     height: 100vh; 
 }
 
+p
+{
+    size: x-large;
+}
+
 .flexbox-container
 {
     background-color: #333333;
-    width: 90vw;
-    height: 75vh;
+    width: 90%;
+    height: 65%;
     margin-bottom: 5%;
     margin-top: 7%;
     padding: 2%;

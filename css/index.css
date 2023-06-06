@@ -11,9 +11,17 @@
     padding: 5%;
 }
 
-.code-font
+.code-font,
+.code-font-link
 {
     font-family: Monaco, monospace;
+    font-size: xx-large;
+}
+
+.code-font-link
+{
+    text-decoration: none;
+    color: #8A2BE2;
 }
 
 .DisplayVideo
