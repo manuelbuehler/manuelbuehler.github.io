@@ -1,0 +1,22 @@
+.video-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.text-container
+{
+    padding: 5%;
+}
+
+.code-font
+{
+    font-family: Monaco, monospace;
+}
+
+.DisplayVideo
+{
+    display: none;
+}
