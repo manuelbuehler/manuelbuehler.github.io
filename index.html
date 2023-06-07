@@ -22,14 +22,20 @@
         </div>
     </nav>
 
-    <div class="text-container">
+    
+    <!-- <div class="text-container">
         <p class="code-font">Willkommen auf meiner Persönlichen Webseite!</p>
         <p class="code-font">Hier findest du einen Überblick über meien Projekte und Fähigkeiten.</p>
         <p class="code-font">Falls du Fragen hast kannst melde dich gerne über mein
         <a href="impressum.html" class="code-font-link">Kontakformular</a>.
         </p>
+    </div> -->
 
-    </div>
+    <div class="text-container">
+        <div id="chat-container">
+          <div id="chat-output"></div>
+        </div>
+      </div>
 
     
     <div class="video-container">
@@ -38,5 +44,12 @@
         </video>
     </div>
     <script src="js/video.js"></script>
+    <script src="js/skript.js"></script>
+
+    <script>
+        //  
+        typeMessage('Willkommen auf meiner Persönlichen Webseite!');
+        typeMessage('Dies ist ein Test ob die Funktion richtig fuktioniert.')
+    </script>
 </body>
 </html>

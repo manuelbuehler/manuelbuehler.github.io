@@ -5,15 +5,16 @@
     justify-content: center;
     height: 80vh;
 }
-
+/* 
 .text-container
 {
     padding: 5%;
-}
+} */
 
 .code-font,
 .code-font-link
 {
+    color: white;
     font-family: Monaco, monospace;
     font-size: xx-large;
 }
@@ -28,3 +29,21 @@
 {
     display: none;
 }
+
+.text-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5%;
+  }
+  
+  #chat-container {
+    height: auto;
+    overflow: auto;
+  }
+  
+  #chat-output {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
