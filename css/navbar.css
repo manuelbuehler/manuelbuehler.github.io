@@ -1,7 +1,7 @@
 /* Variablen werden für das ganze File deklariert */
 :root{
     --background-color: #333333;
-    --darker-background-color: black;
+    --darker-background-color: #222222;
     --accent-color: #8A2BE2;
     --text-color: white;
     --navbar-height: 80px
@@ -31,6 +31,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; 
+    z-index: 1; 
 }
 
 nav .logo{
@@ -79,7 +81,7 @@ nav ul a{
 .dropdown{
     height: min-content;
     width: 200px;
-    background: var(--background-color);
+    background: var(--darker-background-color);
 
     display: none;
     flex-direction: column;
