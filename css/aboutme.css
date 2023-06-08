@@ -1,4 +1,4 @@
-body
+/*body
 {
     display: flex;
     flex-direction: column; 
@@ -7,7 +7,7 @@ body
     height: 90vh; 
     padding: 1%;
 }
-
+*/
 .flexbox-container
 {
     background-color: #333333;

@@ -1,23 +1,15 @@
+body
+{
+    background-image: none !important;
+    background-color: black;
+}
+
 .video-container
 {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
-}
-
-.code-font,
-.code-font-link
-{
-    color: white;
-    font-family: Monaco, monospace;
-    font-size: xx-large;
-}
-
-.code-font-link
-{
-    text-decoration: none;
-    color: #8A2BE2;
 }
 
 .DisplayVideo
@@ -27,18 +19,41 @@
 
 .text-container 
 {
-    width: 100%;
-    padding: 5%;
+    width: auto;
 }
   
 .chat-container {
     height: auto;
-    overflow: auto;
+    overflow: hidden;
   }
   
-.chat-output {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+.chat-output,
+.code-font-link
+{
+    line-height: 2;
+    color: white;
+    font-family: Monaco, monospace;
+    font-size: xx-large;
+}
+
+  
+.code-font-link
+{
+    text-decoration: none;
+    color: #8A2BE2;
+}
+
+@media screen and (max-width: 768px) {
+    .chat-output,
+    .code-font-link {
+      font-size: large;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .chat-output,
+    .code-font-link {
+      font-size: medium; 
+    }
   }
   

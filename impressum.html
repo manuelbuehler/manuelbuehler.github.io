@@ -10,15 +10,34 @@
     <title>Impressum</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div>
-            <a href="index.html" class="navbar-content">Startseite</a>
-            <a href="aboutme.html" class="navbar-content">Über mich</a>
-            <a href="portfolio.html" class="navbar-content">Portfolio</a>
-            <a href="skills.html" class="navbar-content">Fähigkeiten</a>
-            <a href="impressum.html" class="navbar-currentItem">Impressum</a>
-        </div>
+    <nav>
+        <!-- Das Logo / Schrift wird auf der linken Seite der Navbar angezeigt. -->
+        <a class="logo" href="#">Manuel Bühler</a>
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">Über mich</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="skills.html">Fähigkeiten</a></li>
+
+            <!-- Diese Seite enthält Unterseiten, "expandable_li" macht es möglich direkt auf diese zuzugreifen -->
+            <li class="expandable_li">
+                <input type="checkbox" id="products_checkbox">
+                <label for="products_checkbox">Impressum</label>
+                <ul class="dropdown">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Telefon</a></li>
+                    <li><a href="#">Kontaktformular</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
+
     <div class="flex-container">
         <div class="flex-item" hover-text="manuel.buehler@edu.gbssg.ch">
             <h1 class="flex-title">Kontakforumlar</h1>
