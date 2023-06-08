@@ -30,9 +30,9 @@
                 <input type="checkbox" id="products_checkbox">
                 <label for="products_checkbox">Impressum</label>
                 <ul class="dropdown">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Telefon</a></li>
-                    <li><a href="#">Kontaktformular</a></li>
+                    <li><a href="impressum.html">Instagram</a></li>
+                    <li><a href="impressum.html">Telefon</a></li>
+                    <li><a href="impressum.html">Kontaktformular</a></li>
                 </ul>
             </li>
 
@@ -59,16 +59,29 @@
 
     <!-- Generieren des Textes -->
     <script>
-        async function runTypeMessages() 
-        {
-            typeMessage('Willkommen auf meiner Persönlichen Webseite!');
-            await wait(2000);
-            typeMessage("Hier finden Sie einen Überblick über meine Fähigkeiten und meine Projekte.");
-            await wait(4000);
-            typeMessage("Falls ich Ihr Interesse geweckt habe oder Sie Fragen haben, melden Sie sich gerne über das Kontaktformular.");
-        }
-    
-         runTypeMessages();
+async function runTypeMessages() {
+  typeMessage('Willkommen auf meiner persönlichen Webseite!');
+  await wait(2000);
+
+  typeMessage('Hier finden Sie einen Überblick über meine');
+  await wait(2000);
+
+  typeMessageWithHTMLLinks('<a href="skills.html">Fähigkeiten</a>');
+
+  typeMessage(' und meine');
+  await wait(800);
+
+  typeMessageWithHTMLLinks('<a href="portfolio.html">Projekte</a>');
+  typeMessage('.');
+
+  typeMessage(" Falls ich Ihr Interesse geweckt habe oder Sie Fragen haben, melden Sie sich gerne über das");
+  await wait(4500);
+
+  typeMessageWithHTMLLinks('<a href="impressum.html">Kontaktforular</a>');
+  typeMessage('.');
+}
+   
+runTypeMessages();
     </script>
 </body>
 </html>

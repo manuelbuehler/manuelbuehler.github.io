@@ -1,26 +1,27 @@
 body
 {
-    background-image: none !important;
-    background-color: black;
+  background-image: none !important;
+   background-color: black;
 }
 
-.video-container
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
+.video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-.DisplayVideo
-{
-    display: none;
+.DisplayVideo{
+  display: none;
 }
 
-.text-container 
-{
-    padding: 2%;
-    width: auto;
+.text-container {
+   padding: 3%;
+   width: auto;
 }
 
   
