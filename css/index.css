@@ -19,39 +19,46 @@ body
 
 .text-container 
 {
+    padding: 2%;
     width: auto;
+}
+
+  
+.code-font,
+.code-font-link
+{
+    color: white;
+    font-family: Monaco, monospace;
+    font-size: xx-large;
+}
+
+.code-font-link
+{
+    text-decoration: none;
+    color: #8A2BE2;
 }
   
 .chat-container {
     height: auto;
     overflow: hidden;
   }
-  
-.chat-output,
-.code-font-link
-{
-    line-height: 2;
-    color: white;
-    font-family: Monaco, monospace;
-    font-size: xx-large;
-}
 
-  
-.code-font-link
-{
-    text-decoration: none;
-    color: #8A2BE2;
-}
+.chat-output {
+    font-family: Monaco, monospace;
+    font-size: 14px;
+    line-height: 2;
+  }
+
 
 @media screen and (max-width: 768px) {
-    .chat-output,
+    .code-font,
     .code-font-link {
       font-size: large;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .chat-output,
+    .code-font,
     .code-font-link {
       font-size: medium; 
     }

@@ -25,7 +25,7 @@
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="skills.html">Fähigkeiten</a></li>
 
-            <!-- Diese Seite enthält Unterseiten, "expandable_li" macht es möglich direkt auf diese zuzugreifen -->
+            <!-- Diese Seite enthält Unterseiten, "expandable_li" macht es möglich direkt auf diese zuzugreifen. -->
             <li class="expandable_li">
                 <input type="checkbox" id="products_checkbox">
                 <label for="products_checkbox">Impressum</label>
@@ -40,6 +40,7 @@
         </ul>
     </nav>
 
+    <!-- Erstellung des Textcontainers für den generierten Text. -->
     <div class="text-container">
         <div class="chat-container">
           <div class="chat-output"></div>
@@ -47,6 +48,7 @@
       </div>
 
     
+      <!-- Erstellung des Videocontainers  für das angezeigte Video -->
     <div class="video-container">
         <video class="DisplayVideo" width=50% height=auto controls onended="hideVideo()">
             <source src="vid/RickAstley.mp4" type="video/mp4">
@@ -55,18 +57,18 @@
     <script src="js/video.js"></script>
     <script src="js/generateText.js"></script>
 
+    <!-- Generieren des Textes -->
     <script>
-
-    async function runTypeMessages() 
-    {
-        typeMessage('Willkommen auf meiner Persönlichen Webseite!');
-        await wait(2000);
-        typeMessage("Hier finden Sie einen Überblick über meine Fähigkeiten und meine Projekte.");
-        await wait(4000);
-        typeMessage("Falls ich Ihr Interesse geweckt habe oder Sie Fragen haben, melden Sie sich gerne über das Kontaktformular.");
-    }
-
-    runTypeMessages();
+        async function runTypeMessages() 
+        {
+            typeMessage('Willkommen auf meiner Persönlichen Webseite!');
+            await wait(2000);
+            typeMessage("Hier finden Sie einen Überblick über meine Fähigkeiten und meine Projekte.");
+            await wait(4000);
+            typeMessage("Falls ich Ihr Interesse geweckt habe oder Sie Fragen haben, melden Sie sich gerne über das Kontaktformular.");
+        }
+    
+         runTypeMessages();
     </script>
 </body>
 </html>

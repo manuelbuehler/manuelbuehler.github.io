@@ -7,6 +7,7 @@
     --navbar-height: 80px
 }
 
+/* Einstellung für alle Elemente */
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +24,7 @@ body{
     height: 100%;
 }
 
+/* Navbar Aussehen deklarieren */
 nav{
     height: var(--navbar-height);
     background-color: var(--background-color);
@@ -40,6 +42,7 @@ nav .logo{
     text-decoration: none;
 }
 
+/* Platzierung der Elemente innerhalb Navbar */
 nav ul{
     height: 100%;
     display: flex;
@@ -71,6 +74,8 @@ nav ul a{
     text-decoration: none;
 }
 
+/* Dropdown-Menü Aussehen deklarieren */
+
 .dropdown{
     height: min-content;
     width: 200px;
@@ -83,6 +88,8 @@ nav ul a{
     left: 0;
     top: var(--navbar-height);   
 }
+
+/* Platzierung der Elemente innerhalb des Dropdown-Menüs */
 
 .dropdown li{
     height: 70px;
@@ -98,7 +105,7 @@ nav ul a{
 nav li:hover .dropdown{
     display: flex;
 }
-
+ /* Ausblender der Checkboxen des li-Elementes */
 nav input[type="checkbox"]{
     display: none;
 }
@@ -129,6 +136,7 @@ nav input[type="checkbox"]{
     border-radius: 100px;
 }
 
+/* Verkleinern des Logos */
 @media(max-width: 1040px)
 {
     nav .logo{
@@ -136,6 +144,7 @@ nav input[type="checkbox"]{
     }
 }
 
+/* Burger-Menü einblenden */
 @media(max-width: 850px){
     .toggle_button{
         display: flex;

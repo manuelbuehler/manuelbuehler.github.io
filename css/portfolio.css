@@ -1,35 +1,50 @@
 .flexbox-container {
     display: flex;
-    width: 100%;
-    height: auto;
-    align-items: stretch;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-around;
-    flex-wrap: wrap; /* Elemente werden automatisch umbrochen */
-    align-content: center;
-}
-
-.flexbox-items {
-    text-align: center;
-    height: auto;
-    width: 25vw;
-    background-color: #333333;
-    position: relative;
-    padding: 1%;
-    flex-basis: calc(25% - 2%); /* Flex-Basiswert für die Breite der Elemente */
-    /* Hier kannst du weitere Anpassungen für die Flexbox-Elemente vornehmen */
-}
-
-h2 {
+    padding: 3%;
+  }
+  
+  h2 {
     color: #8A2BE2;
-}
-
-ul {
+  }
+  
+  ul {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     list-style-position: inside;
-}
-
-img 
-{
+  }
+  
+  img {
     width: 60%;
-}
+  }
+
+
+  
+  .flexbox-items {
+    text-align: center;
+    height: auto;
+    width: calc(25% - 2%);
+    background-color: #333333;
+    position: relative;
+    padding: 2%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flexbox-container{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .flexbox-items {
+      width: 48%;
+      margin-bottom: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .flexbox-items {
+      width: 98%
+    }
+  }
