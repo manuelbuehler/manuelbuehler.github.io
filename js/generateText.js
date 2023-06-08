@@ -1,5 +1,6 @@
-const chatOutput = document.getElementById('chat-output');
+const chatOutput = document.getElementsByClassName('chat-output')[0];
 
+// Function takes a custom message as input and displays it in the chat container.
 function typeMessage(customMessage) {
   var words = customMessage.split(' ');
 
@@ -20,5 +21,10 @@ function typeMessage(customMessage) {
       clearInterval(interval);
       chatOutput.innerHTML += '<br>'; // Umbruch nach jeder Nachricht
     }
-  }, 400);
+  }, 300);
+}
+
+// This function creates a delay in milliseconds before resolving.
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }

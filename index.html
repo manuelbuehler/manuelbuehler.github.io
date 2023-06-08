@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/index.css">
 
     <title>Home</title>
-
 </head>
 <body>
     <nav class="navbar">
@@ -22,18 +21,9 @@
         </div>
     </nav>
 
-    
-    <!-- <div class="text-container">
-        <p class="code-font">Willkommen auf meiner Persönlichen Webseite!</p>
-        <p class="code-font">Hier findest du einen Überblick über meien Projekte und Fähigkeiten.</p>
-        <p class="code-font">Falls du Fragen hast kannst melde dich gerne über mein
-        <a href="impressum.html" class="code-font-link">Kontakformular</a>.
-        </p>
-    </div> -->
-
     <div class="text-container">
-        <div id="chat-container">
-          <div id="chat-output"></div>
+        <div class="chat-container">
+          <div class="chat-output"></div>
         </div>
       </div>
 
@@ -44,12 +34,20 @@
         </video>
     </div>
     <script src="js/video.js"></script>
-    <script src="js/skript.js"></script>
+    <script src="js/generateText.js"></script>
 
     <script>
-        //  
+
+    async function runTypeMessages() 
+    {
         typeMessage('Willkommen auf meiner Persönlichen Webseite!');
-        typeMessage('Dies ist ein Test ob die Funktion richtig fuktioniert.')
+        await wait(2000);
+        typeMessage("Hier finden Sie einen Überblick über meine Fähigkeiten und meine Projekte.");
+        await wait(4000);
+        typeMessage("Falls ich Ihr Interesse geweckt habe oder Sie Fragen haben, melden Sie sich gerne über das Kontaktformular.");
+    }
+
+    runTypeMessages();
     </script>
 </body>
 </html>
