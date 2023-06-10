@@ -7,46 +7,46 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/impressum.css">
+    <link rel="stylesheet" href="css/contactforum.css">
     <title>Impressum</title>
 </head>
 <body>
-    <nav>
-        <!-- Das Logo / Schrift wird auf der linken Seite der Navbar angezeigt. -->
-        <a class="logo" href="#">Manuel Bühler</a>
-        <input type="checkbox" id="toggle_button">
-        <label for="toggle_button" class="toggle_button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="skills.html">Fähigkeiten</a></li>
+  <nav>
+    <!-- Das Logo / Schrift wird auf der linken Seite der Navbar angezeigt. -->
+    <a class="logo" href="#">Manuel Bühler</a>
+    <input type="checkbox" id="toggle_button">
+    <label for="toggle_button" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="skills.html">Fähigkeiten</a></li>
 
-            <!-- Diese Seite enthält Unterseiten, "expandable_li" macht es möglich direkt auf diese zuzugreifen -->
-            <li class="expandable_li">
-                <input type="checkbox" id="products_checkbox">
-                <label for="products_checkbox">Impressum</label>
-                <ul class="dropdown">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Telefon</a></li>
-                    <li><a href="#">Kontaktformular</a></li>
-                </ul>
-            </li>
-
-            <li><a href="aboutme.html">Über mich</a></li>
-        </ul>
-    </nav>
+        <!-- Diese Seite enthält Unterseiten, "expandable_li" macht es möglich direkt auf diese zuzugreifen. -->
+        <li class="expandable_li">
+            <input type="checkbox" id="products_checkbox">
+            <label for="products_checkbox">Impressum</label>
+            <ul class="dropdown">
+                <li><a href="impressum.html#Instagram">Instagram</a></li>
+                <li><a href="impressum.html#Phone">Telefon</a></li>
+                <li><a href="impressum.html#Contactform">Kontaktformular</a></li>
+            </ul>
+        </li>
+        <li><a href="aboutme.html">Über mich</a></li>
+    </ul>
+</nav>
 
     <div class="flex-container">
         <div class="flex-item" id="Instagram">
           <h1>Instagram</h1>
           <div class="item-content">
-            <img src="img/InstagramMobile.png" alt="Instagram Account Bild" class="instagram-account" />
+            <img src="img/InstagramMobile.png" alt="Instagram Account Bild" class="iphone" />
             <p>Folge mir auf Instagram, um hautnah bei meinen Projekten dabei zu sein.</p>
             <a class="link" href="https://www.instagram.com/instagram/">
-              <img class="instagram-icon" src="img/Instagram_icon.png" alt="Instagram Icon" />
+              <img class="icon" src="img/Instagram_icon.png" alt="Instagram Icon" />
               Jetzt folgen!
             </a>
           </div>
@@ -55,33 +55,37 @@
         <div class="flex-item" id="Phone">
           <h1>Anruf</h1>
           <div class="item-content">
-            <img src="img/InstagramMobile.png" alt="Instagram Account Bild" class="instagram-account" />
-            <p>Klicke auf folgende Links um telefonisch Kontakt mit mir aufzunehmen.</p>
-            <a class="link" href="https://www.instagram.com/instagram/">
-              <img class="instagram-icon" src="img/Instagram_icon.png" alt="Skype Icon" />
+            <img src="img/PhoneMobile.png" alt="Anruf-Bild" class="iphone" />
+            <p>Klicke auf folgende Links, um telefonisch Kontakt mit mir aufzunehmen.</p>
+            <a class="link" href="https://www.skype.com/de/">
+              <img class="icon" src="img/Skype_icon.png" alt="Skype Icon" />
               Skype
             </a>
+            <br>
             <a class="link" href="https://teams.microsoft.com">
-                <img class="instagram-icon" src="img/Instagram_icon.png" alt="Teams Icon" />
-                Teams
+              <img class="icon" src="img/Teams_icon.png" alt="Teams Icon" />
+              Teams
             </a>
-            <p class="link">+41 077 535 54 41</p>
+            <p class="link">
+              <img src="img/Phone_icon.png" alt="Telefon-Icon" class="icon">
+              +41 077 535 54 41
+            </p>
           </div>
         </div>
+        
 
-        <div class="flex-item" id="Contactform">
+        <div class="contactforum" id="Contactform">
+          <form action="https://formsubmit.co/manuel.buehler7@gmail.com" method="POST">
             <h1>Kontaktformular</h1>
-            <div class="item-content">
-              <img src="img/InstagramMobile.png" alt="Instagram Account Bild" class="instagram-account" />
-              <p>Schreibe mir direkt eine Nachricht über das Kontaktformular</p>
-              <a class="link" href="https://www.instagram.com/instagram/">
-                <img class="instagram-icon" src="img/Instagram_icon.png" alt="Skype Icon" />
-                Skype
-              </a>
+            <div class="inputs_container">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email" name="email" placeholder="Email">
+              <textarea name="message" placeholder="Nachricht"></textarea>
             </div>
-          </div>
-      </div>
-      
-
+            <button type="submit">Absenden</button>
+          </form>
+        </div>
+        
+        
 </body>
 </html>

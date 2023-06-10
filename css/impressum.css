@@ -3,11 +3,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    margin: 3%;
   }
   
   .flex-item {
-    margin-bottom: 200px;
+    margin-bottom: 5%;
     padding: 2%;
     background-color: #333333;
     width: 80%;
@@ -20,11 +20,11 @@
     line-height: 2;
   }
   
-  .instagram-account {
+  .iphone {
     float: right;
   }
   
-  .instagram-icon {
+  .icon {
     height: 20px;
     margin-right: 5px;
   }
@@ -34,4 +34,9 @@
     margin-top: 1%;
     color: #8A2BE2;
   }
-  
+
+  @media screen and (max-width: 1024px) {
+    .iphone{
+      display: none
+    }
+  }

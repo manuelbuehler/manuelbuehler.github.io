@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+  }
+  
+  .contactforum {
+    height: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form {
+    height: 575px;
+    width: 500px;
+    padding: 40px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .inputs_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input,
+  textarea {
+    resize: none;
+    height: 64px;
+    width: 240px;
+    margin: 15px;
+    padding: 0px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: #373e49;
+    color: white;
+    transition: 0.2s;
+  }
+  
+  input:hover,
+  textarea:hover {
+    background-color: #47505f;
+  }
+  
+  input:focus,
+  textarea:focus {
+    background-color: #47505f;
+    outline: none;
+    width: 265px;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: rgb(159, 161, 190);
+  }
+  
+  button {
+    height: 64px;
+    width: 140px;
+    border-radius: 1000px;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    background: #8a2be2;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    width: 200px;
+  }
+  
+  button:focus {
+    outline: none;
+    width: 200px;
+  }
+  
+  @media (max-width: 650px) {
+    form {
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+    .inputs_container {
+      margin: 80px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+  }
+  
