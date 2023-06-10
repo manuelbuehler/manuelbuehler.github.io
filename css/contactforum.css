@@ -81,6 +81,11 @@ html {
   }
   
   @media (max-width: 650px) {
+    .contactforum
+    {
+      margin-bottom: 0;
+    }
+   
     form {
       height: 100%;
       width: 100%;
