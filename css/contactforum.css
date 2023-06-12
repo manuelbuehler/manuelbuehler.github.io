@@ -88,7 +88,7 @@ html {
    
     form {
       height: 100%;
-      width: 100%;
+      width: 100vw;
       justify-content: center;
     }
     .inputs_container {
